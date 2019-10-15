@@ -14,6 +14,7 @@ body {
   cursor: pointer;
   position: relative;
   margin: 1rem auto;
+  border-radius: 50px;
 }
 
 .movie-director {
@@ -55,6 +56,7 @@ body {
 }
 .save-button {
   position: absolute;
+  border-radius: 10px;
   top: 25px;
   right: 25px;
   border: 1px solid grey;

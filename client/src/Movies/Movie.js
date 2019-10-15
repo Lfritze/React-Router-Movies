@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import MovieCard from './MovieCard';
+// import { Link } from 'react-router-dom';
 
 const Movie = (props) => {
   const [movie, setMovie] = useState({});
@@ -30,12 +31,14 @@ const Movie = (props) => {
   if (!movie) {
     return <div>Loading movie information...</div>;
   }
-
+  // const { id } = movie;
   return (
-    <div className="save-wrapper">
-      <MovieCard movie={movie} />
-      <div className="save-button" onClick={() => saveMovie()}>Save</div>
-    </div>
+    // <Link to = {`/movies/${id}`} >
+      <div className="save-wrapper">
+        <MovieCard movie={movie} />
+        <div className="save-button" onClick={() => saveMovie()}>Save</div>
+      </div>
+    // </Link>
   );
 }
 
